@@ -1,0 +1,25 @@
+@mixin text-preset-1 {
+  font-size: 56px;
+  line-height: 100%;
+}
+
+@mixin text-preset-1-mobile {
+  font-size: 40px;
+  line-height: 100%;
+}
+
+@mixin text-preset-2-bold {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@mixin text-preset-2-regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@mixin text-preset-3 {
+  font-size: 12px;
+  line-height: 150%;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+  min-height: 100vh;
+  display: block;
+
+  @media screen and (min-width: 504px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 30px;
+  }
+}
+
+
