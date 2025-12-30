@@ -18,7 +18,6 @@ export default function App() {
 
   const submitHandler = async (value: initialValuesProps, {resetForm}: FormikHelpers<initialValuesProps>) => {
     try {
-      await new Promise((n) => setTimeout(n, 2000))
       setEmail(value.email);
       setIsSuccess(true);
       resetForm();

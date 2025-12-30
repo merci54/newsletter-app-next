@@ -11,7 +11,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Newsletter App",
-  description: "Sender e-mails",
+  description: "Testing newsletter app",
 };
 
 export default function RootLayout({
