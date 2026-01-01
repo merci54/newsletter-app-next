@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
     });
 
     await transport.sendMail({
-      from: `Your App <${process.env.SMTP_FROM ?? "no-reply@notehub.site"}>`,
+      from: `Newsletter Test App <${process.env.SMTP_FROM ?? "no-reply@notehub.site"}>`,
       to: email,
       subject: "Welcome to our company!",
       html: `<p>Hello! Thanks for subscribing 🎉</p>`,
