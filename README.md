@@ -1,4 +1,33 @@
+# 📬 Newsletter Subscription App
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+A fully responsive newsletter subscription application built with **Next.js** and styled with **SCSS modules**.  
+Users can subscribe using their email, which is then sent to a backend endpoint that processes the request via **Nodemailer** and **SMTP**.
+
+---
+
+## 🚀 Features
+
+- 🔹 Built with **Next.js 13+ App Router**
+- 🔹 **Backend API route** for handling email delivery
+- 🔹 Email sending powered by **Nodemailer + SMTP**
+- 🔹 Fully responsive UI
+- 🔹 Form validation & error handling
+- 🔹 Deployed on **Vercel**
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology |
+|-------------|-------------|
+| Frontend    | Next.js, React, SCSS Modules |
+| Backend     | Next.js API Routes |
+| Email       | Nodemailer (SMTP / Mailtrap / Resend ready) |
+| Deployment  | Vercel |
+
+---
 
 ## Getting Started
 
@@ -16,9 +45,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
