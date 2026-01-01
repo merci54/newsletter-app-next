@@ -4,8 +4,9 @@ import { type FormikHelpers } from "formik";
 import css from "./page.module.scss";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import SuccessBlock from "./components/SuccessBlock/SuccessBlock";
-import SubscribeBlock from "./components/SubscribeBlock/SubscribeBlock";
+import SuccessBlock from "../components/SuccessBlock/SuccessBlock";
+import SubscribeBlock from "../components/SubscribeBlock/SubscribeBlock";
+import { sendMail } from "@/lib/sendMail";
 
 
 export interface initialValuesProps {
@@ -18,6 +19,7 @@ export default function App() {
 
   const submitHandler = async (value: initialValuesProps, {resetForm}: FormikHelpers<initialValuesProps>) => {
     try {
+      await sendMail(value.email);
       setEmail(value.email);
       setIsSuccess(true);
       resetForm();
